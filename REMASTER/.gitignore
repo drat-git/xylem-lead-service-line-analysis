@@ -1,0 +1,11 @@
+.build/
+.venv/
+node_modules/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+~$*
+production/build_*.py
+production/build_presentation.mjs
+production/repair_scatter_export.py
+*.zip

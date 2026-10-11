@@ -1,0 +1,11 @@
+{
+  "description": "SHA-256 fingerprints of the six final communication artifacts. Source data hashes are recorded separately in facts.json.",
+  "files": {
+    "deliverables/AI_Collaboration_Brief.docx": "45646c8628cb8ef99e80563443fb614b78ea31797c0d5121942f13deea89fbac",
+    "deliverables/AI_Collaboration_Brief.pdf": "bba84190df1778babdc8cd2b40eb09b4023105700f2e9d9136686da8d8b2cd36",
+    "deliverables/Executive_Summary.docx": "36da07d19632afeca3d75ad63e17b1c6405882379a2107bb4f66ead60ff021b2",
+    "deliverables/Executive_Summary.pdf": "8e30201e9aa80cc620663102ea4de7783a383910087af0296a9f611e6090c15c",
+    "deliverables/Xylem_Market_Recommendation.pdf": "d9ae62de168fd6ab5c6d82a72f24d8f4043e74b887cd43641842a69427bd6abb",
+    "deliverables/Xylem_Market_Recommendation.pptx": "7c4bf32a5bbe2cdd4a3a07c64110b155041b25784aa66546b38c8b931d7b50f1"
+  }
+}

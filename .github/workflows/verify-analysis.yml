@@ -1,0 +1,33 @@
+name: Verify analysis
+
+on:
+  push:
+    paths:
+      - 'REMASTER/**'
+      - '.github/workflows/verify-analysis.yml'
+  pull_request:
+    paths:
+      - 'REMASTER/**'
+      - '.github/workflows/verify-analysis.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce-and-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: REMASTER/requirements.txt
+      - name: Install pinned dependencies
+        run: python -m pip install -r REMASTER/requirements.txt
+      - name: Execute notebook in a fresh kernel
+        run: python REMASTER/production/execute_notebook.py
+      - name: Verify results and delivered artifacts
+        run: python REMASTER/production/verify_package.py
