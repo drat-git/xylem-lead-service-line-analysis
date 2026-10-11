@@ -1,0 +1,110 @@
+{"kind":"deck","id":"pr/1uy2bc","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"Lead service line need is not one problem","textShapes":12}
+{"kind":"textbox","id":"sh/i1w3yp8f","slide":1,"text":"Lead service line need is not one problem","textPreview":"Lead service line need is not one problem","textChars":41,"textLines":1,"bbox":[74,42,1135,100]}
+{"kind":"shape","id":"sh/547294r6","slide":1,"bbox":[74,676,1132,0]}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1187,685,30,20]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"text":"States face different mixes of identification and replacement work","textPreview":"States face different mixes of identification and replacement work","textChars":66,"textLines":1,"bbox":[76,145,1110,40]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"text":"Where are infrastructure needs greatest across U.S. states?","textPreview":"Where are infrastructure needs greatest across U.S. states?","textChars":59,"textLines":1,"bbox":[76,212,1100,35]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"text":"01  IDENTIFY","textPreview":"01  IDENTIFY","textChars":12,"textLines":1,"bbox":[78,304,500,48]}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"text":"Resolve Lead Status Unknown lines","textPreview":"Resolve Lead Status Unknown lines","textChars":33,"textLines":1,"bbox":[78,371,505,36]}
+{"kind":"textbox","id":"sh/fu94fe98","slide":1,"text":"Identification Need\n= Lead Status Unknown","textPreview":"Identification Need | = Lead Status Unknown","textChars":41,"textLines":2,"bbox":[78,428,500,75]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"text":"02  REPLACE","textPreview":"02  REPLACE","textChars":11,"textLines":1,"bbox":[704,304,500,48]}
+{"kind":"textbox","id":"sh/wn6dc7eh","slide":1,"text":"Act on known Lead and GRR lines","textPreview":"Act on known Lead and GRR lines","textChars":31,"textLines":1,"bbox":[704,371,505,36]}
+{"kind":"textbox","id":"sh/hofulsf2","slide":1,"text":"Known Replacement Inventory\n= Lead + GRR","textPreview":"Known Replacement Inventory | = Lead + GRR","textChars":40,"textLines":2,"bbox":[704,428,505,75]}
+{"kind":"textbox","id":"sh/ul4vaxgb","slide":1,"text":"Comparing states on only one measure would hide where their actual workload sits.","textPreview":"Comparing states on only one measure would hide where their actual workload sits.","textChars":81,"textLines":1,"bbox":[78,565,1110,66]}
+{"kind":"textbox","id":"sh/vmdcj2xw","slide":1,"text":"Scope: 43,993 complete-report Community Water Systems across 50 states and DC","textPreview":"Scope: 43,993 complete-report Community Water Systems across 50 states and DC","textChars":77,"textLines":1,"bbox":[74,685,1090,24]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Analytical source: completed Lead_Service_Line_Analysis.ipynb and outputs/state_service_line_summary.csv. Known Replacement Inventory = Lead + GRR. Identification Need = Lead Status Unknown, not confirmed lead. Complete-report Community Water Systems only. No composite ranking. Population comparisons use 2025 Census state resident population for the 2026 Q2 inventory."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"Most of the reported national workload","textShapes":12}
+{"kind":"textbox","id":"sh/mxgjm5s7","slide":2,"text":"Most of the reported national workload\nis still unresolved identification","textPreview":"Most of the reported national workload | is still unresolved identification","textChars":73,"textLines":2,"bbox":[74,42,1135,100]}
+{"kind":"shape","id":"sh/9072xkry","slide":2,"bbox":[74,676,1132,0]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1187,685,30,20]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"text":"National inventory within the analytical sample","textPreview":"National inventory within the analytical sample","textChars":47,"textLines":1,"bbox":[77,150,1000,28]}
+{"kind":"textbox","id":"sh/a10jqpsj","slide":2,"text":"Lead Status Unknown","textPreview":"Lead Status Unknown","textChars":19,"textLines":1,"bbox":[83,214,760,34]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"text":"21.59M","textPreview":"21.59M","textChars":6,"textLines":1,"bbox":[83,253,600,70]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"text":"Known Replacement Inventory","textPreview":"Known Replacement Inventory","textChars":27,"textLines":1,"bbox":[83,527,710,32]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"text":"3.12M","textPreview":"3.12M","textChars":5,"textLines":1,"bbox":[83,565,230,52]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"text":"2.18M Lead + 0.94M GRR","textPreview":"2.18M Lead + 0.94M GRR","textChars":22,"textLines":1,"bbox":[294,573,500,36]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"text":"6.9×","textPreview":"6.9×","textChars":4,"textLines":1,"bbox":[933,247,290,87]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"text":"as many Unknown lines as lines already classified for replacement","textPreview":"as many Unknown lines as lines already classified for replacement","textChars":65,"textLines":1,"bbox":[937,344,280,135]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"text":"Unknown lines require identification.\nThey are not confirmed lead lines.","textPreview":"Unknown lines require identification. | They are not confirmed lead lines.","textChars":72,"textLines":2,"bbox":[937,515,278,95]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Counts reflect the analytical sample.","textPreview":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Counts reflect the analytical sample.","textChars":86,"textLines":1,"bbox":[74,685,1090,24]}
+{"kind":"chart","id":"ch/s3y54z2d","slide":2,"name":"","chartType":"bar","bbox":[83,323,740,199]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Analytical source: completed Lead_Service_Line_Analysis.ipynb and outputs/state_service_line_summary.csv. Known Replacement Inventory = Lead + GRR. Identification Need = Lead Status Unknown, not confirmed lead. Complete-report Community Water Systems only. No composite ranking. Population comparisons use 2025 Census state resident population for the 2026 Q2 inventory."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"The same national challenge looks very different","textShapes":25}
+{"kind":"textbox","id":"sh/by1svqlc","slide":3,"text":"The same national challenge looks very different\nfrom state to state","textPreview":"The same national challenge looks very different | from state to state","textChars":68,"textLines":2,"bbox":[74,42,1135,100]}
+{"kind":"shape","id":"sh/cza94vmx","slide":3,"bbox":[74,676,1132,0]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1187,685,30,20]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"text":"Known Replacement Inventory","textPreview":"Known Replacement Inventory","textChars":27,"textLines":1,"bbox":[318,150,420,30]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"text":"Lead Status Unknown","textPreview":"Lead Status Unknown","textChars":19,"textLines":1,"bbox":[771,150,410,30]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"text":"Replacement-\nheavy","textPreview":"Replacement- | heavy","textChars":18,"textLines":2,"bbox":[78,215,215,70]}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"text":"Illinois","textPreview":"Illinois","textChars":8,"textLines":1,"bbox":[305,220,160,29]}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"text":"672,210","textPreview":"672,210","textChars":7,"textLines":1,"bbox":[1028,216,170,27]}
+{"kind":"textbox","id":"sh/n2l4fq98","slide":3,"text":"529,706","textPreview":"529,706","textChars":7,"textLines":1,"bbox":[1028,246,170,27]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"text":"Largest already-classified replacement inventory","textPreview":"Largest already-classified replacement inventory","textChars":48,"textLines":1,"bbox":[305,288,840,28]}
+{"kind":"shape","id":"sh/943mhgre","slide":3,"bbox":[78,333,1125,0]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"text":"Identification-\nheavy","textPreview":"Identification- | heavy","textChars":21,"textLines":2,"bbox":[78,364,215,70]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"text":"Texas","textPreview":"Texas","textChars":5,"textLines":1,"bbox":[305,357,160,29]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"text":"114,501","textPreview":"114,501","textChars":7,"textLines":1,"bbox":[1028,353,170,27]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"text":"2,178,881","textPreview":"2,178,881","textChars":9,"textLines":1,"bbox":[1028,383,170,27]}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"text":"Pennsylvania","textPreview":"Pennsylvania","textChars":12,"textLines":1,"bbox":[305,426,160,29]}
+{"kind":"textbox","id":"sh/e10f2twf","slide":3,"text":"113,717","textPreview":"113,717","textChars":7,"textLines":1,"bbox":[1028,422,170,27]}
+{"kind":"textbox","id":"sh/f29gbyx0","slide":3,"text":"2,055,512","textPreview":"2,055,512","textChars":9,"textLines":1,"bbox":[1028,452,170,27]}
+{"kind":"textbox","id":"sh/03ix43e5","slide":3,"text":"Much larger unresolved identification inventories","textPreview":"Much larger unresolved identification inventories","textChars":49,"textLines":1,"bbox":[305,491,840,28]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"bbox":[78,528,1125,0]}
+{"kind":"textbox","id":"sh/6d0fytg3","slide":3,"text":"Substantial work\non both dimensions","textPreview":"Substantial work | on both dimensions","textChars":35,"textLines":2,"bbox":[78,551,220,74]}
+{"kind":"textbox","id":"sh/re9g7yxo","slide":3,"text":"Ohio","textPreview":"Ohio","textChars":4,"textLines":1,"bbox":[305,549,160,29]}
+{"kind":"textbox","id":"sh/tgry9ofu","slide":3,"text":"321,502","textPreview":"321,502","textChars":7,"textLines":1,"bbox":[1028,545,170,27]}
+{"kind":"textbox","id":"sh/a9kfadwn","slide":3,"text":"878,788","textPreview":"878,788","textChars":7,"textLines":1,"bbox":[1028,575,170,27]}
+{"kind":"textbox","id":"sh/batgjixs","slide":3,"text":"New York","textPreview":"New York","textChars":8,"textLines":1,"bbox":[305,610,160,29]}
+{"kind":"textbox","id":"sh/k3m1g7yp","slide":3,"text":"289,055","textPreview":"289,055","textChars":7,"textLines":1,"bbox":[1028,606,170,27]}
+{"kind":"textbox","id":"sh/z2d07mh4","slide":3,"text":"951,163","textPreview":"951,163","textChars":7,"textLines":1,"bbox":[1028,636,170,27]}
+{"kind":"textbox","id":"sh/y14jehgj","slide":3,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Narrative examples, not statistical clusters. All bars use the same scale.","textPreview":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Narrative examples, not statistical clusters. All bars use the same scale.","textChars":123,"textLines":1,"bbox":[74,685,1090,24]}
+{"kind":"chart","id":"ch/ipsbapcf","slide":3,"name":"","chartType":"bar","bbox":[466,215,540,63]}
+{"kind":"chart","id":"ch/ul432d8n","slide":3,"name":"","chartType":"bar","bbox":[466,352,540,63]}
+{"kind":"chart","id":"ch/29o36d8z","slide":3,"name":"","chartType":"bar","bbox":[466,421,540,63]}
+{"kind":"chart","id":"ch/c3q5w7a1","slide":3,"name":"","chartType":"bar","bbox":[466,544,540,63]}
+{"kind":"chart","id":"ch/547il4zy","slide":3,"name":"","chartType":"bar","bbox":[466,605,540,63]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Analytical source: completed Lead_Service_Line_Analysis.ipynb and outputs/state_service_line_summary.csv. Known Replacement Inventory = Lead + GRR. Identification Need = Lead Status Unknown, not confirmed lead. Complete-report Community Water Systems only. No composite ranking. Population comparisons use 2025 Census state resident population for the 2026 Q2 inventory."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"A single ranking would hide","textShapes":13}
+{"kind":"textbox","id":"sh/oz29krqh","slide":4,"text":"A single ranking would hide\nwhere each state’s workload sits","textPreview":"A single ranking would hide | where each state’s workload sits","textChars":60,"textLines":2,"bbox":[74,42,1135,100]}
+{"kind":"shape","id":"sh/3ytsrmpw","slide":4,"bbox":[74,676,1132,0]}
+{"kind":"textbox","id":"sh/2xkrih8b","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1187,685,30,20]}
+{"kind":"textbox","id":"sh/1wbapc7q","slide":4,"text":"Texas","textPreview":"Texas","textChars":5,"textLines":1,"bbox":[273,181,180,24]}
+{"kind":"textbox","id":"sh/gv29g7q5","slide":4,"text":"Pennsylvania","textPreview":"Pennsylvania","textChars":12,"textLines":1,"bbox":[273,219,180,24]}
+{"kind":"textbox","id":"sh/fu9sn2p0","slide":4,"text":"New York","textPreview":"New York","textChars":8,"textLines":1,"bbox":[406,359,160,24]}
+{"kind":"textbox","id":"sh/et0reh8f","slide":4,"text":"Ohio","textPreview":"Ohio","textChars":4,"textLines":1,"bbox":[493,394,130,24]}
+{"kind":"textbox","id":"sh/tsrqlc7u","slide":4,"text":"Illinois","textPreview":"Illinois","textChars":8,"textLines":1,"bbox":[749,435,130,24]}
+{"kind":"textbox","id":"sh/sri9s7q9","slide":4,"text":"What this reveals","textPreview":"What this reveals","textChars":17,"textLines":1,"bbox":[925,160,290,40]}
+{"kind":"textbox","id":"sh/ilwf69kv","slide":4,"text":"Replacement and identification needs do not consistently move together.","textPreview":"Replacement and identification needs do not consistently move together.","textChars":71,"textLines":1,"bbox":[925,221,282,100]}
+{"kind":"textbox","id":"sh/jm5gze1g","slide":4,"text":"One overall “need” ranking would hide these differences.","textPreview":"One overall “need” ranking would hide these differences.","textChars":56,"textLines":1,"bbox":[925,339,282,86]}
+{"kind":"textbox","id":"sh/knex8j21","slide":4,"text":"Planning should distinguish known replacement work from inventory still requiring identification.","textPreview":"Planning should distinguish known replacement work from inventory still requiring identification.","textChars":97,"textLines":1,"bbox":[925,443,282,118]}
+{"kind":"textbox","id":"sh/5ony1oj6","slide":4,"text":"This pattern describes inventory. It does not measure progress, maturity, or cause.","textPreview":"This pattern describes inventory. It does not measure progress, maturity, or cause.","textChars":83,"textLines":1,"bbox":[925,589,285,73]}
+{"kind":"textbox","id":"sh/axcf29kj","slide":4,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Each point represents one state or DC.","textPreview":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Each point represents one state or DC.","textChars":87,"textLines":1,"bbox":[74,685,1090,24]}
+{"kind":"chart","id":"ch/947mhkn2","slide":4,"name":"Chart","chartType":"scatter","bbox":[55,150,820,475]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Analytical source: completed Lead_Service_Line_Analysis.ipynb and outputs/state_service_line_summary.csv. Known Replacement Inventory = Lead + GRR. Identification Need = Lead Status Unknown, not confirmed lead. Complete-report Community Water Systems only. No composite ranking. Population comparisons use 2025 Census state resident population for the 2026 Q2 inventory."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"State size changes who stands out,","textShapes":21}
+{"kind":"textbox","id":"sh/qd0bahob","slide":5,"text":"State size changes who stands out,\nand local evidence is needed before acting","textPreview":"State size changes who stands out, | and local evidence is needed before acting","textChars":77,"textLines":2,"bbox":[74,42,1135,100]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"text":"Absolute workload","textPreview":"Absolute workload","textChars":17,"textLines":1,"bbox":[77,161,329,34]}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"text":"Raw totals show where the largest overall inventories are concentrated.","textPreview":"Raw totals show where the largest overall inventories are concentrated.","textChars":71,"textLines":1,"bbox":[77,208,315,103]}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"text":"Relative scale","textPreview":"Relative scale","textChars":14,"textLines":1,"bbox":[435,161,420,34]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"text":"Per 10,000 state residents","textPreview":"Per 10,000 state residents","textChars":26,"textLines":1,"bbox":[435,205,430,29]}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"text":"Raw top 10 retained after normalization","textPreview":"Raw top 10 retained after normalization","textChars":39,"textLines":1,"bbox":[435,245,440,30]}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"text":"6 of 10","textPreview":"6 of 10","textChars":7,"textLines":1,"bbox":[435,286,180,50]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"text":"Known Replacement","textPreview":"Known Replacement","textChars":17,"textLines":1,"bbox":[616,293,263,34]}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"text":"3 of 10","textPreview":"3 of 10","textChars":7,"textLines":1,"bbox":[435,339,180,50]}
+{"kind":"textbox","id":"sh/ahkvi1cb","slide":5,"text":"Identification Need","textPreview":"Identification Need","textChars":19,"textLines":1,"bbox":[616,346,263,34]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"text":"Illinois: #1 Known Replacement\nPennsylvania: #1 Unknown","textPreview":"Illinois: #1 Known Replacement | Pennsylvania: #1 Unknown","textChars":55,"textLines":2,"bbox":[435,408,442,62]}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"text":"Both per 10,000 state residents","textPreview":"Both per 10,000 state residents","textChars":31,"textLines":1,"bbox":[435,473,440,26]}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"text":"Rhode Island, Louisiana and New Mexico become more visible.","textPreview":"Rhode Island, Louisiana and New Mexico become more visible.","textChars":59,"textLines":1,"bbox":[435,511,431,65]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"text":"Decision implication","textPreview":"Decision implication","textChars":20,"textLines":1,"bbox":[918,161,302,34]}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"text":"State inventories can guide deeper local investigation.","textPreview":"State inventories can guide deeper local investigation.","textChars":55,"textLines":1,"bbox":[918,208,288,76]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"text":"Intervention decisions require utility-level records, GIS information, inspections, funding information, local capacity, project plans and other local evidence.","textPreview":"Intervention decisions require utility-level records, GIS information, inspections, funding information, local capacity, project plans an...","textChars":160,"textLines":1,"bbox":[918,304,286,240]}
+{"kind":"shape","id":"sh/tcfel0vu","slide":5,"bbox":[77,583,1128,0]}
+{"kind":"textbox","id":"sh/hgrmpwj2","slide":5,"text":"Next question","textPreview":"Next question","textChars":13,"textLines":1,"bbox":[77,599,260,28]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"text":"How do state and utility identification and replacement needs align with available funding\nand local capacity to complete service-line replacement?","textPreview":"How do state and utility identification and replacement needs align with available funding | and local capacity to complete service-line ...","textChars":147,"textLines":2,"bbox":[278,596,938,63]}
+{"kind":"textbox","id":"sh/fe94nm1w","slide":5,"text":"Unknown does not mean lead. Inventory does not measure exposure or water quality. Incomplete-report systems are excluded.","textPreview":"Unknown does not mean lead. Inventory does not measure exposure or water quality. Incomplete-report systems are excluded.","textChars":121,"textLines":1,"bbox":[77,661,1125,20]}
+{"kind":"textbox","id":"sh/ud0ne10b","slide":5,"text":"Sources: U.S. EPA 2026 Q2 Service Line Inventory; U.S. Census Bureau 2025 resident population estimates (population context).","textPreview":"Sources: U.S. EPA 2026 Q2 Service Line Inventory; U.S. Census Bureau 2025 resident population estimates (population context).","textChars":125,"textLines":1,"bbox":[77,686,1125,19]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1190,686,25,19]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"Source: U.S. EPA 2026 Q2 Service Line Inventory. Analytical source: completed Lead_Service_Line_Analysis.ipynb and outputs/state_service_line_summary.csv. Known Replacement Inventory = Lead + GRR. Identification Need = Lead Status Unknown, not confirmed lead. Complete-report Community Water Systems only. No composite ranking. Population comparisons use 2025 Census state resident population for the 2026 Q2 inventory."}

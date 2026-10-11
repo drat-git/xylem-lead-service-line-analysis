@@ -1,0 +1,38 @@
+import fs from 'node:fs/promises';
+import {FileBlob,PresentationFile} from '@oai/artifact-tool';
+const p=await PresentationFile.importPptx(await FileBlob.load('.deck-v5/source.pptx'));
+const records=(await p.inspect({kind:'textbox',maxChars:80000})).ndjson.split('\n').filter(Boolean).map(JSON.parse).filter(x=>x.kind==='textbox');
+const C={navy:'#102A43',blue:'#3F73C7',orange:'#F07C2B',muted:'#52636E'};
+function text(s,name,content,x,y,w,h,size,color=C.navy,bold=false){const o=s.shapes.add({name,geometry:'textbox',position:{left:x,top:y,width:w,height:h},fill:'none',line:{fill:'none',width:0}});o.text=content;o.text.style={typeface:'Arial',fontSize:size,color,bold,alignment:'left',verticalAlignment:'top',autoFit:'none',insets:{left:0,right:0,top:0,bottom:0}};return o;}
+const s4=p.slides.items[3];
+for(const r of records.filter(r=>r.slide===4 && r.bbox[0]>920 && r.bbox[1]<670))s4.shapes.deleteById(p.resolve(r.id).id);
+text(s4,'v5-4-heading','WHAT THIS REVEALS',930,165,276,32,20,C.navy,true);
+text(s4,'v5-4-gate','For Unknown lines, identification is the gating step.',930,207,276,72,22,C.navy,true);
+text(s4,'v5-4-unknown','An Unknown line must be classified before its replacement need can be determined.',930,291,276,82,20);
+text(s4,'v5-4-known','Known Lead + GRR lines can already move toward replacement planning.',930,386,276,78,20);
+text(s4,'v5-4-national','Nationally, Unknown inventory is 6.9× the known replacement inventory.',930,476,276,76,20);
+text(s4,'v5-4-count','Identification Need is larger in 49 of 51 states/DC.',930,560,276,48,20,C.orange,true);
+text(s4,'v5-4-caveat','This describes reported inventory, not project progress or implementation capacity.',930,622,276,44,15,C.muted);
+const s5=p.slides.items[4];
+for(const sh of [...s5.shapes.items])s5.shapes.deleteById(sh.id);
+text(s5,'v5-5-title','Closing the identification gap is the broadest challenge\nLocal evidence determines what happens next',79,38,1132,108,36,C.navy,true);
+text(s5,'v5-5-implication-label','Decision implication',82,164,1090,26,19,C.navy,true);
+text(s5,'v5-5-implication','The more Unknown lines are classified,\nthe clearer the replacement workload becomes.',82,197,1100,82,32,C.navy,true);
+text(s5,'v5-5-popheading','Why population context matters',82,309,1080,32,24,C.navy,true);
+text(s5,'v5-5-raw','Raw totals show absolute workload and tend to favor larger states.',82,355,500,52,21);
+text(s5,'v5-5-normal','Per 10,000 state residents shows inventory scale relative to state population.',82,421,500,56,21);
+text(s5,'v5-5-not','These rates do not measure affected residents, customers, exposure, or prevalence.',82,491,510,46,17,C.muted);
+text(s5,'v5-5-retained','Raw top 10 retained in the population-adjusted top 10',648,354,550,28,18,C.muted);
+text(s5,'v5-5-six','6 of 10',648,393,158,47,32,C.blue,true);
+text(s5,'v5-5-known','Known Replacement',823,399,376,34,21,C.blue);
+text(s5,'v5-5-three','3 of 10',648,445,158,47,32,C.orange,true);
+text(s5,'v5-5-identification','Identification Need',823,451,376,34,21,C.orange);
+text(s5,'v5-5-example','Illinois: #1 Known Replacement\nPennsylvania: #1 Unknown\nBoth per 10,000 state residents',648,500,550,64,17,C.muted);
+// Preserve the reference’s simple closing rule.
+s5.shapes.add({name:'v5-5-rule',geometry:'line',position:{left:78,top:580,width:1127,height:0},fill:'none',line:{fill:C.navy,width:1}});
+text(s5,'v5-5-nextlabel','Next question',82,596,177,33,18,C.navy,true);
+text(s5,'v5-5-next','Once service lines are identified, which utility-level, geographic, funding, and local-capacity factors determine where replacement can move forward?',282,593,924,62,21,C.navy,true);
+text(s5,'v5-5-limit','Unknown does not mean lead. Inventory does not measure exposure or water quality. Incomplete-report systems are excluded.',82,665,1110,20,12,C.muted);
+text(s5,'v5-5-source','Sources: U.S. EPA 2026 Q2 inventory data; 2025 Census resident population estimates (population context).',82,690,1100,20,12,C.muted);
+text(s5,'v5-5-number','5',1195,690,20,20,12,C.muted);
+await(await PresentationFile.exportPptx(p)).save('.deck-v5/edited.pptx');
