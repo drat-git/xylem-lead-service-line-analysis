@@ -1,6 +1,6 @@
 .build/
 .venv/
-node_modules/
+node_modules
 __pycache__/
 .ipynb_checkpoints/
 .DS_Store
