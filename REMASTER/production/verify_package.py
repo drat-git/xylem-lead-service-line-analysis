@@ -48,19 +48,26 @@ def vals(series,tag):
 with zipfile.ZipFile(R/'deliverables/Xylem_Market_Recommendation.pptx') as z:
     slides=[p for p in z.namelist() if p.startswith('ppt/slides/slide') and p.endswith('.xml') and '/_rels/' not in p]
     charts=sorted(p for p in z.namelist() if '/charts/chart' in p and p.endswith('.xml') and '/_rels/' not in p)
-    check('Five slides and four native charts', len(slides)==5 and len(charts)==4)
-    check('Four embedded chart workbooks', len([p for p in z.namelist() if p.startswith('ppt/embeddings/') and p.endswith('.xlsx')])==4)
+    check('Five slides and two native charts', len(slides)==5 and len(charts)==2)
+    check('Two embedded chart workbooks', len([p for p in z.namelist() if p.startswith('ppt/embeddings/') and p.endswith('.xlsx')])==2)
     series=[ET.fromstring(z.read(p)).findall('.//c:ser',ns) for p in charts]
     check('National chart values', np.allclose(vals(series[0][0],'val'),[F['known_replacement']/1e6,F['unknown']/1e6]))
     order=['New York','Ohio','Illinois','Pennsylvania','Texas']
     check('Five-state chart values', np.allclose(vals(series[1][0],'val'),S.loc[order,'Known_Replacement']/1e6) and np.allclose(vals(series[1][1],'val'),S.loc[order,'Unknown']/1e6))
-    for i,norm in [(2,False),(3,True)]:
-        points=sorted((x,y) for ser in series[i] for x,y in zip(vals(ser,'xVal'),vals(ser,'yVal')))
-        cols=['Known_Replacement_per_10k','Unknown_per_10k'] if norm else ['Known_Replacement','Unknown']
-        expected=sorted(tuple(row) for row in (S[cols]/(1 if norm else 1e6)).to_numpy())
-        check('Scatterplot all 51 data pairs: '+str(norm),len(points)==51 and np.allclose(points,expected))
+    for i, expected in [(0,['Lead + GRR','Unknown']),(1,order)]:
+        for j, ser in enumerate(series[i]):
+            labels=[x.text for x in ser.findall('c:cat//c:pt/c:v',ns)]
+            check(f'Chart {i+1}, series {j+1}: category order',labels==expected)
+    table=ET.fromstring(z.read('ppt/slides/slide4.xml')).find('.//a:tbl',ns)
+    check('Recommendation remains an editable table',table is not None)
+    rows=[[' '.join(t.text or '' for t in c.findall('.//a:t',ns)).strip() for c in row.findall('a:tc',ns)] for row in table.findall('a:tr',ns)]
+    check('Service recommendations match state examples',len(rows)==4 and
+          [row[:2] for row in rows[1:]]==[
+              ['Texas and Pennsylvania','Identification'],
+              ['Illinois','Replacement planning'],
+              ['Ohio and New York','Both in parallel']])
     text=' '.join(t.text or '' for p in slides for t in ET.fromstring(z.read(p)).findall('.//a:t',ns))
-    for phrase in ['Unknown does not mean lead','Galvanized Requiring Replacement','3 of 706','91.4%']:
+    for phrase in ['Unknown does not mean lead','Galvanized Requiring Replacement','System coverage is not line coverage','91.4%']:
         check('Visible presentation qualification: '+phrase,phrase in text)
 
 for name,count in [('Executive_Summary',1),('AI_Collaboration_Brief',2),('Xylem_Market_Recommendation',5)]:

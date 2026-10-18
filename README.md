@@ -35,7 +35,7 @@ The recommendation is a proposal, not a completed pilot or a claim of revenue, c
 5. Compare state inventories in absolute terms and per 10,000 residents using **2025 Census population**.
 6. Examine reporting coverage, then connect the observed patterns to a qualified recommendation and a utility-screening process.
 
-The notebook executed all **41 code cells without errors**. Verification reconciles the shared tables, source-file fingerprints, all four editable presentation charts, and the final document page counts. A GitHub Actions workflow reruns the notebook and package checks on relevant changes.
+The notebook executed all **41 code cells without errors**. Verification reconciles the shared tables, source-file fingerprints, both editable presentation charts, the recommendation table, and the final document page counts. A GitHub Actions workflow reruns the notebook and package checks on relevant changes.
 
 ## Project context and contribution
 

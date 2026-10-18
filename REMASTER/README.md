@@ -23,7 +23,7 @@ The presentation and documents are editable. Their PDFs provide a consistent rea
 - Connected the existing state-level findings to an explicit Xylem recommendation and utility-screening process.
 - Added reporting coverage for all 51 jurisdictions and a transparent comparison of five illustrative markets.
 - Preserved the original sample, metric definitions and population benchmark, with added assertions and a shared facts export.
-- Refined the existing presentation palette and met the original five-slide, one-page and two-page limits.
+- Rebuilt the five-slide story around the business question, national finding, state differences, proposed services and utility screening.
 
 The examples suggest identification emphasis in Texas and Pennsylvania, replacement-planning emphasis in Illinois, and parallel work in Ohio and New York. Each has both kinds of inventory. They are neither statistical clusters nor an exhaustive market shortlist.
 
@@ -42,7 +42,7 @@ On Windows, activate with `.venv\Scripts\activate`. The execution script creates
 
 The notebook uses the two unchanged files in `data/raw/`. It writes six chart images, `state_service_line_summary.csv`, `reporting_coverage.csv`, `illustrative_markets.csv` and `facts.json` to `results/`. No network access is needed to rerun the analysis after dependencies are installed. `facts.json` includes source-file hashes and tested package versions.
 
-Then run `python production/verify_package.py` to compare the generated tables against the headline findings and all four native presentation charts, verify the published artifact hashes, and check PDF page counts. The repository's GitHub Actions workflow performs these steps in a fresh environment on relevant pushes and pull requests.
+Then run `python production/verify_package.py` to compare the generated tables against the headline findings and both native presentation charts, check the editable recommendation table, verify the published artifact hashes, and check PDF page counts. The repository's GitHub Actions workflow performs these steps in a fresh environment on relevant pushes and pull requests.
 
 ## How the package is organized
 
